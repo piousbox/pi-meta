@@ -1,0 +1,26 @@
+{
+  "name": "pi-meta",
+  "version": "0.0.1",
+  "description": "Render the Meta line on items",
+  "main": "dist/index.js",
+  "author": "Victor Pudeyev",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_trash": "./node_modules/.bin/webpack --config webpack/config.js",
+    "build": "./node_modules/.bin/babel src/index.jsx -o dist/index.js --presets react,es2015"
+  }
+}
